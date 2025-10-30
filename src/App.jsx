@@ -7,17 +7,20 @@ function App() {
   const [isLogin, setIsLogin] = useState(false);
   return (
     <div className="bg-black text-white min-h-screen">
-      <div className="max-w-sm container">
+      
         {isLogin ? (
-          <Thumbnail />
+          <div className="container">
+            <Thumbnail />
+          </div>
         ) : (
-          <UserWatch
-            onClick={() => {
-              setIsLogin(true);
-            }}
-          />
+          <div className="max-w-sm container">
+            <UserWatch
+              onClick={() => {
+                setIsLogin(true);
+              }}
+            />
+          </div>
         )}
-      </div>
     </div>
   );
 }
