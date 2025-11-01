@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../../../data/config.json';
+import { resolveAsset } from '../../../lib/assetResolver';
 
 export default function BreakingNews() {
   return (
@@ -8,7 +9,7 @@ export default function BreakingNews() {
       <img
         className="w-full rounded-md"
         height={300}
-        src={data.breaking_news_img}
+        src={resolveAsset(data.breaking_news_img)}
       />
       <div className="text-[#A3A1A1] text-sm italic leading-[1.15rem] mt-2">
         <div

@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../../../data/config.json';
+import { resolveAsset } from '../../../lib/assetResolver';
 
 const LoveItem = ({ imageUrl, title, duration, description }) => {
   return (
@@ -8,9 +9,9 @@ const LoveItem = ({ imageUrl, title, duration, description }) => {
         <div>
           <img
             className="w-full rounded-md object-cover"
-            height={100}
+            height={120}
             style={{
-              maxHeight: '100px',
+              maxHeight: '120px',
             }}
             src={imageUrl}
             alt="dummy"
@@ -38,7 +39,7 @@ export default function LoveStory() {
         {data.love_story.map((item, index) => (
           <LoveItem
             key={index}
-            imageUrl={item.image_url}
+            imageUrl={resolveAsset(item.image_url)}
             title={item.title}
             duration="26m 10s"
             description={item.description}

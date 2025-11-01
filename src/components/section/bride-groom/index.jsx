@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../../../data/config.json';
+import { resolveAsset } from '../../../lib/assetResolver';
 
 export default function Bridegroom() {
   return (
@@ -10,7 +11,7 @@ export default function Bridegroom() {
       <div className="grid grid-cols-2 gap-4">
         <div>
           <img
-            src={data.pegantin.wanita.foto}
+            src={resolveAsset(data.pegantin.wanita.foto)}
             className="w-full rounded-md"
             height={164}
           />
@@ -26,7 +27,7 @@ export default function Bridegroom() {
         </div>
         <div>
           <img
-            src={data.pegantin.pria.foto}
+            src={resolveAsset(data.pegantin.pria.foto)}
             className="w-full rounded-md"
             height={164}
           />

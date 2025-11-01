@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import DetailInfo from '../detail-info';
 import data from '../../../data/config.json';
+import { resolveAsset } from '../../../lib/assetResolver';
 
 const TagItem = ({ title }) => {
   return (
@@ -44,7 +45,7 @@ export default function Thumbnail() {
   return (
     <div
       style={{
-        backgroundImage: `url(${data.thumbnail_image_url})`,
+        backgroundImage: `url(${resolveAsset(data.thumbnail_image_url)})`,
       }}
       className="min-h-screen bg-cover bg-center bg-no-repeat flex flex-col justify-end mb-10"
     >

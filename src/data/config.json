@@ -1,37 +1,37 @@
 {
   "pegantin": {
     "pria": {
-      "foto": "https://i.ibb.co/Z6DqR2CY/image-3.jpg",
+      "foto": "/assets/GNT04463.jpg",
       "panggilan": "Sena",
       "nama": "Mochamad Febry Lasena Darmawan",
-      "bapak": "Wawan",
+      "bapak": "Bapak Wawan",
       "ibu": "Malini"
     },
     "wanita": {
-      "foto": "https://i.ibb.co/1fDdnmcm/image-4.jpg",
+      "foto": "/assets/GNT04455.jpg",
       "panggilan": "Risma",
       "nama": "Kharisma Damayanti",
-      "bapak": "Amud",
+      "bapak": "Bapak Amud",
       "ibu": "O'om"
     }
   },
   "audio_url": "https://slametandfatma.wedding/audio/myaudio.mp3",
   "tanggal_pernikahan": "07 Desember 2025",
-  "thumbnail_image_url": "https://i.ibb.co/xqfJnF87/image-1.jpg",
+  "thumbnail_image_url": "/assets/GNT04388.jpg",
   "url_video": "https://slametandfatma.wedding/video/myvideo.mp4",
   "intro": "Setelah Sena dan Risma dipertemukan dalam situasi yang tepat, di mana keduanya telah siap untuk memulai hubungan bersama, tibalah mereka di awal perjalanan baru menuju pernikahan.",
-  "breaking_news_img": "https://i.ibb.co/WN0MCVRp/image-2.jpg",
-  "breaking_news_content": "<p>Halo! Karena kalian adalah orang penting yang mengisi hari-hari kami, kami ingin informasikan bahwa kami akan segera menikah! &lt;3 </p><p className=\"mt-4\"> Tapi sebelumnya, kami mohon maaf kepada teman dan kerabat semua karena tidak bisa mengundang kalian hadir di hari bahagia kami, dikarenakan pernikahan kami bersifat intimate wedding yang dilaksanakan di Bekasi dan hanya dihadiri oleh keluarga dan orang terdekat.</p><p className=\"mt-4\">Walaupun begitu, kami harapkan sebaik-baiknya doa untuk kelancaran pernikahan dan hari-hari bahagia setelahnya.</p><p className=\"mt-4\">Dengan penuh cinta,</p><p>The bride and groom &lt;3</p>",
+  "breaking_news_img": "/assets/GNT04450.jpg",
+  "breaking_news_content": "<p>Halo! Karena kalian adalah orang penting yang mengisi hari-hari kami, kami ingin informasikan bahwa kami akan segera menikah! &lt;3 </p><p className=\"mt-4\"> Tapi sebelumnya, kami mohon maaf kepada teman dan kerabat semua karena tidak bisa mengundang kalian hadir di hari bahagia kami, dikarenakan pernikahan kami bersifat intimate wedding yang dilaksanakan di Bogor dan hanya dihadiri oleh keluarga dan orang terdekat.</p><p className=\"mt-4\">Walaupun begitu, kami harapkan sebaik-baiknya doa untuk kelancaran pernikahan dan hari-hari bahagia setelahnya.</p><p className=\"mt-4\">Dengan penuh cinta,</p><p>The bride and groom &lt;3</p>",
   "love_story": [
     {
-      "image_url": "https://slametandfatma.wedding/galeri/story1.jpeg",
+      "image_url": "/assets/9f.jpeg",
       "title": "Episode 1: How We Met Each Other that Time",
-      "description": "Slamet dan Fatma pertama kali bertemu pada tahun 2015 sebagai teman satu regu saat masa orientasi siswa Sekolah Menengah Kejuruan."
+      "description": "Sena dan Risma pertama kali bertemu pada tahun 2014 sebagai teman satu kelas saat masa smp di smp negeri 1 ciawi (NESACI)."
     },
     {
-      "image_url": "https://slametandfatma.wedding/galeri/story2.jpg",
-      "title": "Episode 2: A Love That Grows With Time",
-      "description": "Selama 1 tahun berteman, akhirnya mereka menyadari bahwa perasaan yang mereka miliki satu sama lain bukan hanya sebatas teman sekolah belaka, melainkan..."
+      "image_url": "/assets/amogus.jpg",
+      "title": "Episode 2: Fate of love",
+      "description": "Sena dan Risma berpisah setelah beberapa tahun berteman, dan kembali bertemu setelah 6 tahun di tahun 2020. Di awali dengan chat di sosial media facebook dan bermain game bersama"
     },
     {
       "image_url": "https://slametandfatma.wedding/galeri/story3.jpeg",
