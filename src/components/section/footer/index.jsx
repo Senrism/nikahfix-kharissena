@@ -18,7 +18,16 @@ export default function Footer() {
             rel="noreferrer"
             href="https://www.facebook.com/arifintajul4"
           >
-            Tajul Arifin S
+            Tajul Arifin S 
+          </a>
+          &nbsp; and customized by
+          <a
+            className="underline"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/febry-lasena-darmawan/"
+          >
+            &nbsp; Febry Lasena D
           </a>
         </p>
       </div>

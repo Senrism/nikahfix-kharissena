@@ -41,6 +41,47 @@ export default function DetailInfo() {
             Lihat Lokasi
           </a>
         </div>
+
+        <div className="rounded-xl p-5 bg-[#1c1c1c] border border-[#343434] space-y-4">
+          <h2 className="text-xl font-bold text-center mb-3">Gift</h2>
+          <p className="text-sm text-center mb-4">
+            Doa restu Anda merupakan karunia yang sangat berarti bagi kami. 
+            Namun, apabila Bapak/Ibu/Saudara/i ingin memberi tanda kasih, kami 
+            juga menyediakan pilihan berikut:
+          </p>
+          <div className="flex flex-col sm:flex-row sm:justify-evenly gap-4">
+            <div className="flex-1 bg-[#232323] rounded-lg p-4">
+              <h3 className="font-semibold text-lg mb-2 text-center">
+                {data.pegantin.pria.nama}
+              </h3>
+              <div className="space-y-2">
+                {data.pegantin.pria.rekening && data.pegantin.pria.rekening.map((rek, idx) => (
+                  <div key={idx} className="bg-[#2c2c2c] rounded p-3 flex flex-col items-center">
+                    <span className="font-medium">{rek.bank}</span>
+                    <span className="font-mono tracking-wide">{rek.nomor}</span>
+                    <span className="text-xs text-gray-400">{rek.nama_pemilik}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="flex-1 bg-[#232323] rounded-lg p-4">
+              <h3 className="font-semibold text-lg mb-2 text-center">
+                {data.pegantin.wanita.nama}
+              </h3>
+              <div className="space-y-2">
+                {data.pegantin.wanita.rekening && data.pegantin.wanita.rekening.map((rek, idx) => (
+                  <div key={idx} className="bg-[#2c2c2c] rounded p-3 flex flex-col items-center">
+                    <span className="font-medium">{rek.bank}</span>
+                    <span className="font-mono tracking-wide">{rek.nomor}</span>
+                    <span className="text-xs text-gray-400">{rek.nama_pemilik}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+
         {data.show_menu.wish && import.meta.env.VITE_APP_TABLE_NAME ? (
           <WishSection />
         ) : null}

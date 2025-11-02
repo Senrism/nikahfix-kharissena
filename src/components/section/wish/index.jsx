@@ -80,12 +80,12 @@ export default function WishSection() {
   };
 
   const fetchData = async () => {
-    // const { data, error } = await supabase
-    //   .from(import.meta.env.VITE_APP_TABLE_NAME) // Replace 'your_table' with the actual table name
-    //   .select('name, message, color');
+    const { data, error } = await supabase
+      .from(import.meta.env.VITE_APP_TABLE_NAME) // Replace 'your_table' with the actual table name
+      .select('name, message, color');
 
-    // if (error) console.error('Error fetching data: ', error);
-    // else setData(data);
+    if (error) console.error('Error fetching data: ', error);
+    else setData(data);
   };
 
   const scrollToLastChild = () => {

@@ -3,16 +3,30 @@
     "pria": {
       "foto": "/assets/GNT04463.jpg",
       "panggilan": "Sena",
-      "nama": "Mochamad Febry Lasena Darmawan",
+      "nama": "Moch Febry Lasena D",
       "bapak": "Bapak Wawan",
-      "ibu": "Malini"
+      "ibu": "Malini",
+      "rekening": [
+        {
+          "bank": "BCA",
+          "nomor": "7360727631",
+          "nama_pemilik": "Mochamad Febry Lasena Darmawan"
+        }
+      ]
     },
     "wanita": {
       "foto": "/assets/GNT04455.jpg",
       "panggilan": "Risma",
       "nama": "Kharisma Damayanti",
       "bapak": "Bapak Amud",
-      "ibu": "O'om"
+      "ibu": "O'om",
+      "rekening": [
+        {
+          "bank": "BCA",
+          "nomor": "6830819931",
+          "nama_pemilik": "Kharisma Damayanti"
+        }
+      ]
     }
   },
   "audio_url": "https://slametandfatma.wedding/audio/myaudio.mp3",
@@ -36,24 +50,21 @@
     {
       "image_url": "https://slametandfatma.wedding/galeri/story3.jpeg",
       "title": "Episode 3: Choose to Spend Life Together",
-      "description": "Setelah 8 tahun lebih menjalin hubungan, pada Desember 2024 Slamet menyampaikan niatnya untuk melamar Fatma."
+      "description": "Setelah 5 tahun lebih menjalin hubungan, pada September 2025 Sena menyampaikan niatnya untuk melamar Risma."
     },
     {
-      "image_url": "https://slametandfatma.wedding/galeri/story4.jpeg",
+      "image_url": "/assets/image-1.jpeg",
       "title": "[Coming Soon] Final Episode: The Beginning of Forever",
-      "description": "Ketika hari H itu datang, Slamet dan Fatma akan berbagi kisah haru mereka di sini. Sampai bertemu lagi di cerita bahagia selanjutnya!"
+      "description": "Ketika hari H itu datang, Sena dan Risma akan berbagi kisah haru mereka di sini. Sampai bertemu lagi di cerita bahagia selanjutnya!"
     }
   ],
   "gallery": [
-    "https://slametandfatma.wedding/galeri/1.jpg",
-    "https://slametandfatma.wedding/galeri/2.jpg",
-    "https://slametandfatma.wedding/galeri/3.jpg",
-    "https://slametandfatma.wedding/galeri/4.jpg",
-    "https://slametandfatma.wedding/galeri/5.jpg",
-    "https://slametandfatma.wedding/galeri/6.jpg",
-    "https://slametandfatma.wedding/galeri/7.jpg",
-    "https://slametandfatma.wedding/galeri/8.jpg",
-    "https://slametandfatma.wedding/galeri/9.jpg"
+    "/assets/gallery-1.jpg",
+    "/assets/gallery-2.jpg",
+    "/assets/gallery-3.jpeg",
+    "/assets/gallery-4.jpg",
+    "/assets/gallery-5.jpg",
+    "/assets/gallery-6.jpg"
   ],
   "show_menu": {
     "breaking_news": true,

@@ -1,10 +1,11 @@
 import React from 'react';
 import data from '../../../data/config.json';
+import { resolveAsset } from '../../../lib/assetResolver';
 
 const GalleryItem = ({ src }) => (
   <img
-    src={src}
-    className="rounded-md hover:scale-105 w-full object-cover cursor-pointer"
+    src={resolveAsset(src)}
+    className="rounded-md hover:scale-105 w-full object-contain cursor-pointer"
     style={{
       minHeight: '200px',
     }}
