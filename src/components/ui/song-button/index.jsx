@@ -1,15 +1,101 @@
-import React from 'react';
-import data from '../../../data/config.json';
+import React, { useRef, useEffect } from 'react';
+import audioFile from '../../../assets/still-the-one.mp3';
 
 export default function SongButton() {
-  const [isPlaying, setIsPlaying] = React.useState(true);
-  //stop the song when browser is closed or minimized
-  React.useEffect(() => {
+  const [isPlaying, setIsPlaying] = React.useState(false);
+  const [hasUserInteracted, setHasUserInteracted] = React.useState(false);
+  const audioRef = useRef(null);
+
+  // Initialize audio - start muted to allow autoplay, then unmute on user interaction
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    // Start with muted audio to allow autoplay (browsers allow muted autoplay)
+    audio.muted = true;
+    audio.volume = 0.5; // Set volume to 50%
+    
+    // Try to play muted audio on mount
+    const attemptPlay = async () => {
+      try {
+        await audio.play();
+        setIsPlaying(true);
+      } catch (error) {
+        // If even muted autoplay fails, wait for user interaction
+        console.log('Autoplay prevented, waiting for user interaction');
+        setIsPlaying(false);
+      }
+    };
+
+    attemptPlay();
+  }, []);
+
+  // Listen for first user interaction to unmute audio
+  useEffect(() => {
+    if (hasUserInteracted) return;
+
+    const handleUserInteraction = async () => {
+      const audio = audioRef.current;
+      if (!audio) return;
+
+      // Unmute the audio
+      audio.muted = false;
+      setHasUserInteracted(true);
+
+      // Ensure audio is playing
+      if (audio.paused) {
+        try {
+          await audio.play();
+          setIsPlaying(true);
+        } catch (error) {
+          console.error('Error playing audio:', error);
+        }
+      }
+    };
+
+    // Listen for various user interactions
+    const events = ['click', 'touchstart', 'keydown', 'scroll'];
+    events.forEach(event => {
+      document.addEventListener(event, handleUserInteraction, { once: true });
+    });
+
+    return () => {
+      events.forEach(event => {
+        document.removeEventListener(event, handleUserInteraction);
+      });
+    };
+  }, [hasUserInteracted]);
+
+  // Handle play/pause when isPlaying state changes
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    if (isPlaying) {
+      audio.play().catch((error) => {
+        console.error('Error playing audio:', error);
+        setIsPlaying(false);
+      });
+    } else {
+      audio.pause();
+    }
+  }, [isPlaying]);
+
+  // Stop the song when browser is closed or minimized
+  useEffect(() => {
     const handleVisibilityChange = () => {
       if (document.hidden) {
-        setIsPlaying(false);
+        const audio = audioRef.current;
+        if (audio && !audio.paused) {
+          audio.pause();
+          setIsPlaying(false);
+        }
       } else {
-        setIsPlaying(true);
+        // Optionally resume when tab becomes visible again
+        // Uncomment if you want audio to resume automatically
+        // if (isPlaying) {
+        //   audioRef.current?.play();
+        // }
       }
     };
     document.addEventListener('visibilitychange', handleVisibilityChange);
@@ -17,17 +103,44 @@ export default function SongButton() {
       document.removeEventListener('visibilitychange', handleVisibilityChange);
     };
   }, []);
+
+  const handleToggle = async () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    // On first click, ensure audio is unmuted
+    if (!hasUserInteracted) {
+      audio.muted = false;
+      setHasUserInteracted(true);
+    }
+
+    if (isPlaying) {
+      audio.pause();
+      setIsPlaying(false);
+    } else {
+      try {
+        await audio.play();
+        setIsPlaying(true);
+      } catch (error) {
+        console.error('Error playing audio:', error);
+        setIsPlaying(false);
+      }
+    }
+  };
+
   return (
     // component to play and stop the song
     <div className="fixed bottom-5 right-5 ">
       <audio
-        autoPlay
+        ref={audioRef}
         loop
-        src={isPlaying ? data.audio_url : ''}
+        src={audioFile}
         className="hidden"
+        preload="auto"
+        muted
       />
       <button
-        onClick={() => setIsPlaying(!isPlaying)}
+        onClick={handleToggle}
         className="w-7 h-7 bg-black rounded-full flex justify-center items-center"
       >
         <svg

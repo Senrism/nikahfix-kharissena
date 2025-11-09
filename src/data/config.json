@@ -6,6 +6,7 @@
       "nama": "Moch Febry Lasena D",
       "bapak": "Bapak Wawan",
       "ibu": "Malini",
+      "instagram": "lasenafeb",
       "rekening": [
         {
           "bank": "BCA",
@@ -15,11 +16,12 @@
       ]
     },
     "wanita": {
-      "foto": "/assets/GNT04455.jpg",
+      "foto": "/assets/GNT04454.jpg",
       "panggilan": "Risma",
       "nama": "Kharisma Damayanti",
       "bapak": "Bapak Amud",
       "ibu": "O'om",
+      "instagram": "kharisma.dmynt",
       "rekening": [
         {
           "bank": "BCA",
@@ -29,13 +31,13 @@
       ]
     }
   },
-  "audio_url": "https://slametandfatma.wedding/audio/myaudio.mp3",
+  "audio_url": "/assets/still-the-one.mp3",
   "tanggal_pernikahan": "07 Desember 2025",
   "thumbnail_image_url": "/assets/GNT04388.jpg",
   "url_video": "https://slametandfatma.wedding/video/myvideo.mp4",
   "intro": "Setelah Sena dan Risma dipertemukan dalam situasi yang tepat, di mana keduanya telah siap untuk memulai hubungan bersama, tibalah mereka di awal perjalanan baru menuju pernikahan.",
   "breaking_news_img": "/assets/GNT04450.jpg",
-  "breaking_news_content": "<p>Halo! Karena kalian adalah orang penting yang mengisi hari-hari kami, kami ingin informasikan bahwa kami akan segera menikah! &lt;3 </p><p className=\"mt-4\"> Tapi sebelumnya, kami mohon maaf kepada teman dan kerabat semua karena tidak bisa mengundang kalian hadir di hari bahagia kami, dikarenakan pernikahan kami bersifat intimate wedding yang dilaksanakan di Bogor dan hanya dihadiri oleh keluarga dan orang terdekat.</p><p className=\"mt-4\">Walaupun begitu, kami harapkan sebaik-baiknya doa untuk kelancaran pernikahan dan hari-hari bahagia setelahnya.</p><p className=\"mt-4\">Dengan penuh cinta,</p><p>The bride and groom &lt;3</p>",
+  "breaking_news_content": "<p>Halo! Karena kalian adalah orang penting yang mengisi hari-hari kami, kami ingin informasikan bahwa kami akan segera menikah! &lt;3 </p><p className=\"mt-4\">Dengan penuh cinta,</p><p>The bride and groom &lt;3</p>",
   "love_story": [
     {
       "image_url": "/assets/9f.jpeg",
@@ -53,18 +55,22 @@
       "description": "Setelah 5 tahun lebih menjalin hubungan, pada September 2025 Sena menyampaikan niatnya untuk melamar Risma."
     },
     {
-      "image_url": "/assets/image-1.jpeg",
+      "image_url": "/assets/KH13.jpg",
       "title": "[Coming Soon] Final Episode: The Beginning of Forever",
       "description": "Ketika hari H itu datang, Sena dan Risma akan berbagi kisah haru mereka di sini. Sampai bertemu lagi di cerita bahagia selanjutnya!"
     }
   ],
   "gallery": [
-    "/assets/gallery-1.jpg",
-    "/assets/gallery-2.jpg",
-    "/assets/gallery-3.jpeg",
-    "/assets/gallery-4.jpg",
-    "/assets/gallery-5.jpg",
-    "/assets/gallery-6.jpg"
+    "/assets/1.jpg",
+    "/assets/3.jpg",
+    "/assets/5.jpg",
+    "/assets/8.jpg",
+    "/assets/2.jpg",
+    "/assets/6.jpg",
+    "/assets/4.jpg",
+    "/assets/7.jpg",
+    "/assets/9.png"
+
   ],
   "show_menu": {
     "breaking_news": true,

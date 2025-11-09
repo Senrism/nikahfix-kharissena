@@ -19,6 +19,14 @@ export default function Bridegroom() {
             <h4 className="text-sm text-white font-medium mt-2">
               {data.pegantin.wanita.nama}
             </h4>
+            <a href={`https://www.instagram.com/${data.pegantin.wanita.instagram}`} target="_blank" rel="noopener noreferrer" className="text-[#A3A1A1] text-xs leading-4 mt-2">
+              <div className="flex items-center">
+                <img src={resolveAsset('/assets/instagram.png')} alt="Instagram" className="w-4 h-4 inline-block mr-1" />
+                  <span style={{ paddingTop: '2px' }}>
+                    {data.pegantin.wanita.instagram}
+                  </span>
+              </div>
+            </a>
             <p className="text-[#A3A1A1] text-xs leading-4 mt-2">
               Putri dari {data.pegantin.wanita.bapak} &amp; Ibu{' '}
               {data.pegantin.wanita.ibu}
@@ -35,6 +43,14 @@ export default function Bridegroom() {
             <h4 className="text-sm text-white font-medium mt-2">
               {data.pegantin.pria.nama}
             </h4>
+            <a href={`https://www.instagram.com/${data.pegantin.pria.instagram}`} target="_blank" rel="noopener noreferrer" className="text-[#A3A1A1] text-xs leading-4 mt-2">
+            <div className="flex items-center">
+              <img src={resolveAsset('/assets/instagram.png')} alt="Instagram" className="w-4 h-4 inline-block mr-1" />
+                <span style={{ paddingTop: '2px' }}>
+                  {data.pegantin.pria.instagram}
+                </span>
+            </div>
+            </a>
             <p className="text-[#A3A1A1] text-xs leading-4 mt-2">
               Putra dari {data.pegantin.pria.bapak} &amp; Ibu{' '}
               {data.pegantin.pria.ibu}
