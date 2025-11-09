@@ -41,7 +41,7 @@ function App() {
         )
       ) : (
         <div className="fixed inset-0 bg-black flex items-center justify-center">
-          <div className="text-white text-xl">Loading assets...</div>
+          <div className="text-white text-xl">Tunggu bentar...</div>
         </div>
       )}
     </div>
