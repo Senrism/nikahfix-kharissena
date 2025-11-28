@@ -1,7 +1,7 @@
 {
   "pegantin": {
     "pria": {
-      "foto": "/assets/GNT04463.jpg",
+      "foto": "/assets/resize-3.jpeg",
       "panggilan": "Sena",
       "nama": "Moch Febry Lasena D",
       "bapak": "Bapak Wawan",
@@ -16,7 +16,7 @@
       ]
     },
     "wanita": {
-      "foto": "/assets/GNT04454.jpg",
+      "foto": "/assets/resize-2.jpeg",
       "panggilan": "Risma",
       "nama": "Kharisma Damayanti",
       "bapak": "Bapak Amud",
@@ -36,7 +36,7 @@
   "thumbnail_image_url": "/assets/GNT04388.jpg",
   "url_video": "https://slametandfatma.wedding/video/myvideo.mp4",
   "intro": "Setelah Sena dan Risma dipertemukan dalam situasi yang tepat, di mana keduanya telah siap untuk memulai hubungan bersama, tibalah mereka di awal perjalanan baru menuju pernikahan.",
-  "breaking_news_img": "/assets/GNT04450.jpg",
+  "breaking_news_img": "/assets/resize-4.jpeg",
   "breaking_news_content": "<p>Halo! Karena kalian adalah orang penting yang mengisi hari-hari kami, kami ingin informasikan bahwa kami akan segera menikah! &lt;3 </p><p className=\"mt-4\">Dengan penuh cinta,</p><p>The bride and groom &lt;3</p>",
   "love_story": [
     {
@@ -55,7 +55,7 @@
       "description": "Setelah 5 tahun lebih menjalin hubungan, pada September 2025 Sena menyampaikan niatnya untuk melamar Risma."
     },
     {
-      "image_url": "/assets/KH13.jpg",
+      "image_url": "/assets/resize-1.jpeg",
       "title": "[Coming Soon] Final Episode: The Beginning of Forever",
       "description": "Ketika hari H itu datang, Sena dan Risma akan berbagi kisah haru mereka di sini. Sampai bertemu lagi di cerita bahagia selanjutnya!"
     }
@@ -69,7 +69,7 @@
     "/assets/6.jpg",
     "/assets/4.jpg",
     "/assets/7.jpg",
-    "/assets/9.png"
+    "/assets/resize-5.jpeg"
 
   ],
   "show_menu": {
