@@ -41,7 +41,14 @@ export default function Bridegroom() {
                   </span>
               </div>
             </a>
-            {to.toLowerCase() != 'keluarga besar line 5' && (
+            {[
+              'keluarga besar line 5',
+              'yemi & partner',
+              'muti & partner',
+              'shofi & partner',
+              'rita & partner',
+              'selin & partner',
+            ].indexOf(to.toLowerCase()) === -1 && (
               <p className="text-[#A3A1A1] text-xs leading-4 mt-2">
                 Putri dari {data.pegantin.wanita.bapak} &amp; Ibu{' '}
                 {data.pegantin.wanita.ibu}
@@ -67,7 +74,14 @@ export default function Bridegroom() {
                 </span>
             </div>
             </a>
-            {to.toLowerCase() != 'keluarga besar line 5' && (
+            {[
+              'keluarga besar line 5',
+              'yemi & partner',
+              'muti & partner',
+              'shofi & partner',
+              'rita & partner',
+              'selin & partner',
+            ].indexOf(to.toLowerCase()) === -1 && (
               <p className="text-[#A3A1A1] text-xs leading-4 mt-2">
                 Putra dari {data.pegantin.pria.bapak} &amp; Ibu{' '}
                 {data.pegantin.pria.ibu}
