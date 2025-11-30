@@ -31,7 +31,7 @@ export default function TitleInfo() {
         </span>
       </div>
       <div className="bg-[#E50913] py-1 px-2 rounded text-xs text-white font-bold w-fit">
-        Coming soon on Saturday, {data.tanggal_pernikahan}
+        Coming soon on Sunday, {data.tanggal_pernikahan}
       </div>
       <div className="pt-2">
         <p className="text-white text-sm leading-[1.15rem] mb-2">
