@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="bg-black text-white min-h-screen force-mobile">
       {showNetflixIntro && assetsPreloaded ? (
         <NetflixIntro onComplete={handleNetflixIntroComplete} />
       ) : assetsPreloaded ? (

@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import data from '../../../data/config.json';
 import { resolveAsset } from '../../../lib/assetResolver';
 
+
 export default function Bridegroom() {
+
+  //get params from url
+  const [to, setTo] = useState('Guest');
+
+  useEffect(() => {
+    if (window) {
+      const url = new URL(window.location.href);
+      const to = url.searchParams.get('to');
+      setTo(to ? to : 'Guest');
+    }
+  }, []);
+
+
   return (
     <div>
       <h2 className="text-lg leading-5 text-white font-bold mb-4">
@@ -27,10 +41,12 @@ export default function Bridegroom() {
                   </span>
               </div>
             </a>
-            <p className="text-[#A3A1A1] text-xs leading-4 mt-2">
-              Putri dari {data.pegantin.wanita.bapak} &amp; Ibu{' '}
-              {data.pegantin.wanita.ibu}
-            </p>
+            {to.toLowerCase() != 'keluarga besar line 5' && (
+              <p className="text-[#A3A1A1] text-xs leading-4 mt-2">
+                Putri dari {data.pegantin.wanita.bapak} &amp; Ibu{' '}
+                {data.pegantin.wanita.ibu}
+              </p>
+            )}
           </div>
         </div>
         <div>
@@ -51,10 +67,12 @@ export default function Bridegroom() {
                 </span>
             </div>
             </a>
-            <p className="text-[#A3A1A1] text-xs leading-4 mt-2">
-              Putra dari {data.pegantin.pria.bapak} &amp; Ibu{' '}
-              {data.pegantin.pria.ibu}
-            </p>
+            {to.toLowerCase() != 'keluarga besar line 5' && (
+              <p className="text-[#A3A1A1] text-xs leading-4 mt-2">
+                Putra dari {data.pegantin.pria.bapak} &amp; Ibu{' '}
+                {data.pegantin.pria.ibu}
+              </p>
+            )}
           </div>
         </div>
       </div>

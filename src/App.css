@@ -11,3 +11,11 @@
     transform: rotate(360deg);
   }
 }
+
+.force-mobile {
+  @media (min-width: 769px) {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
