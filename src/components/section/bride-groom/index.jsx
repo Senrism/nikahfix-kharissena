@@ -50,6 +50,7 @@ export default function Bridegroom() {
               'selin & partner',
               'teh unyil & partner',
               'teh encap & partner',
+              'ibu risma & partner',
             ].indexOf(to.toLowerCase()) === -1 && (
               <p className="text-[#A3A1A1] text-xs leading-4 mt-2">
                 Putri dari {data.pegantin.wanita.bapak} &amp; Ibu{' '}
@@ -85,6 +86,7 @@ export default function Bridegroom() {
               'selin & partner',
               'teh unyil & partner',
               'teh encap & partner',
+              'ibu risma & partner',
             ].indexOf(to.toLowerCase()) === -1 && (
               <p className="text-[#A3A1A1] text-xs leading-4 mt-2">
                 Putra dari {data.pegantin.pria.bapak} &amp; Ibu{' '}
