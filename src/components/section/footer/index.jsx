@@ -1,6 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
 
 export default function Footer() {
+  //get params from url
+  const [to, setTo] = useState('Guest');
+
+  useEffect(() => {
+    if (window) {
+      const url = new URL(window.location.href);
+      const to = url.searchParams.get('to');
+      setTo(to ? to : 'Guest');
+    }
+  }, []);
   return (
     <div>
       <div className="mt-8 flex flex-col  items-center">
@@ -30,6 +41,12 @@ export default function Footer() {
             &nbsp; Febry Lasena D
           </a>
         </p>
+        {["tor management", "alfin", "fikri", "reggy & partner", "pak nicholas patrick", "guest"].includes(to.toLowerCase()) && (
+          <p className="text-[10px] text-[#A3A1A1] mb-6 text-center">
+            Special thanks to Alturian and Pak Nicholas Patrick<br />
+            For providing material support, and for the skills and knowledge I gained—both of which made it possible for me to complete this website.
+          </p>
+        )}
       </div>
     </div>
   );
